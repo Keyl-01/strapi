@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jobs",
+  "info": {
+    "singularName": "job",
+    "pluralName": "jobs",
+    "displayName": "Job",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "jobname": {
+      "type": "string",
+      "required": true
+    },
+    "salary": {
+      "type": "string"
+    },
+    "time": {
+      "type": "enumeration",
+      "enum": [
+        "Fulltime"
+      ],
+      "default": "Fulltime"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}
